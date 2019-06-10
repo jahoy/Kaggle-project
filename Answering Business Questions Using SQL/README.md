@@ -1,3 +1,3 @@
 chinook.db
 
-![chinookDB](chinookDB.png)
+![chinookDB](./chinookDB.png)
