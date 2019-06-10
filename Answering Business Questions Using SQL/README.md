@@ -1,3 +1,3 @@
 chinook.db
 
-![chinookDB](chinookDB.png ?raw=true "Title")
+![chinookDB](chinookDB.png)
