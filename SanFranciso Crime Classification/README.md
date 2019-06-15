@@ -4,4 +4,15 @@
 [Dataset](https://www.kaggle.com/c/sf-crime/data)
 
 1. SanFranciso Crime Classification.ver1: `LGBM 모델`을 활용하여 Classification - 상위 4% 기록
-2 SanFranciso Crime Classification.ver1: `Neural Network`를 통해 Feature를 추가하여 `LGBM 모델`로 모델링함 Classification - 상위 3% 기록
+2. SanFranciso Crime Classification.ver1: `Neural Network`를 통해 Feature를 추가하여 `LGBM 모델`로 모델링함 Classification - 상위 3% 기록
+  
+딥러닝을 사용하려고 생각한 이유 -> Address에서 중요한 정보를 살려내서 머신러닝의 피쳐로 추가해주기 위해서!
+
+1) 딥러닝 모델에 넣을 데이터 준비하기
+토크나이저를 통해 각 단어를 숫자로 등록시키고, 실제로 문자는 모델이 이해하지못하기 때문에 숫자로 바꿔줍니다. 하지만 그상태로는 아직도 모델이 학습을 할수가없는데, 바로 데이터마다의 길이가 다르기 때문입니다(단어의 갯수가 다르다 = 피쳐의 갯수가 다르다) 그래서 패딩을 통해서 각 데이터의 단어의 갯수를 모두 맞춰줍니다.
+
+2) 딥러닝 모델을 선언하고, 직접 트레인셋을 학습시킵니다. 여기서의 트레인셋은 padded 즉 트레인셋의 주소정보입니다!
+
+3) 학습을 시켰으면 예측을 해야하는데, 이때는 2가지의 예측값을 가져와야 트레인셋과 테스트셋의 피쳐를 추가할 수 있습니다. 그래서 트레인셋을 가지고 예측하고, 테스트셋을 가지고 예측해서 각각 39개의 칼럼을 얻어냈습니다.
+
+4) 그 39개의 칼럼은 너무많기 때문에 PCA를 이용해 2차원으로 축소시켜줍니다! 그런뒤에 마지막으로 concat함수를 이용해 트레인셋과 테스트셋에 2개의 칼럼을 각각 추가해줍니다!
