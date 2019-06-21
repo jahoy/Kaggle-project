@@ -41,6 +41,5 @@ UBer Eats와 비슷한 Food Delivery Business 에서 발생하는 비지니스 K
 
 1. Rank users by their count of orders
 2. Pivoting user revenues by month
-3. report
 
 
