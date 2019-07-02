@@ -5,12 +5,12 @@
 
 1. ver1 - Logistic Regression
 Result
-accuracy: 0.83
-precision: 0.89
-recall: 0.784
-f1: 0.83
-roc_auc: 0.9
+- accuracy: 0.83
+- precision: 0.89
+- recall: 0.784
+- f1: 0.83
+- roc_auc: 0.9
 
 2. ver2 - RandomForest
 Result
-LOOCV: 0.87
+- LOOCV: 0.87
