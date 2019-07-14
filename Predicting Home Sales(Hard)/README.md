@@ -2,7 +2,7 @@
 
 # Prediciting Home Sales(hard_version)
 `Ridge`, `Lasso`, `ElasticNet`, `xgboost`, `lightgbm`  모델들을 활용하여 `Stacking`(앙상블) 방법을 통해 모델 구축 
-- Rank in Top 1%
+- Rank in Top 1% (상위 1% 성적)
 
 
 
