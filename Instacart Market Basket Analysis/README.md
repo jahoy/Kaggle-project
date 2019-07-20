@@ -30,5 +30,5 @@ Instacart is challenging the Kaggle community to use this anonymized data on cus
   
 3. Word2Vec (NLP) : product name -> vectorize
   - product name을 vectorize 시켜서 서로 비슷한 이름끼리의 product끼리 연관성을 줌
-4. Modeling - LightGBM model   - 상위 15% 성적 ( TOP 15% in Rank)
+4. Modeling - LightGBM model   - 상위 15% 성적 ( `TOP 15% in Rank`)
   - 많은 데이터량을 처리할 수 있고, 카데고리별로 잘 나눌 수 있는 LightGBM 모델 사용
